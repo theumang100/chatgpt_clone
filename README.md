@@ -5,6 +5,6 @@
 2. Start Fast API server by running '''uvicorn main:app --reload'''
 
 # Step2: Run React App
-1.**cd stream-app**
+1. **cd stream-app**
 2. run **npm start**
 
