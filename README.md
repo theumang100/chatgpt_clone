@@ -1,7 +1,7 @@
 ## How to run r2d2-prototype
 
 # Step1: Run the Fast API Server
-1. Go to the r2d2-prototype folder **cd r2dt-prototype**
+1. Go to the r2d2-prototype folder **cd backend**
 2. Start Fast API server by running **uvicorn main:app --reload**
 
 # Step2: Run React App(in another terminal)
