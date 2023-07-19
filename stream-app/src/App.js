@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './css/style.css';
+
 
 function App() {
   const [response, setResponse] = useState('');
@@ -29,8 +31,12 @@ function App() {
 
   return (
     <div>
-      <button onClick={handleGenerate}>Generate</button>
-      <pre>{response}</pre>
+      <div className='button_container'>
+        <div className="vertical-center">
+          <button className='button' onClick={handleGenerate}>Generate</button>
+      </div>
+    </div>
+        <pre>{response}</pre>
     </div>
   );
 }
