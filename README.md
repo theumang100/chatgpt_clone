@@ -19,3 +19,4 @@
 
 ##  AWS Deployment
 1.  Have setup **deploy.yml** inside **.github/workflows** for aws deployment. In which backend will be deployed to AWS Lambda function named **r2d2_prototype** and frontend(stream-app) will be deployed to S3 Bucket named **r2d2-frontend**
+2.  Given AWS IAM Users **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY** into my GitHib Repository secrets 
