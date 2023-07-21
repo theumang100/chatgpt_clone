@@ -26,6 +26,11 @@ jobs:
       
       - name: Install backend dependencies
         run: pip install -r backend/requirements.txt
+
+      - name: Build and package backend code
+        run: |
+          cd backend
+          zip -r backend.zip .
       
       - name: Build React application
         run: |
