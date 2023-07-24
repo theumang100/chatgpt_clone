@@ -19,6 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.post("/generate")
 async def generate(request: Request):
     # Extract the data from the request
@@ -30,7 +31,7 @@ async def generate(request: Request):
         response = await client.post(
             "https://api.openai.com/v1/engines/davinci-codex/completions",
             headers={
-                "Authorization": "Bearer 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", #my OpenAI private key
+                "Authorization": "Bearer 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",  # my OpenAI private key
                 "Content-Type": "application/json",
             },
             json={"prompt": prompt, "max_tokens": 100},
@@ -43,3 +44,9 @@ async def generate(request: Request):
                 yield chunk
 
         return StreamingResponse(stream_generator(), media_type="text/plain")
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8000)
