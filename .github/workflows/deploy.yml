@@ -49,4 +49,4 @@ jobs:
           
       - name: Deploy frontend to S3
         run: |
-          aws s3 sync frontend/build/ s3://${{ env.S3_BUCKET_NAME }} --delete
+          aws s3 sync stream-app/build/ s3://${{ env.S3_BUCKET_NAME }} --delete
