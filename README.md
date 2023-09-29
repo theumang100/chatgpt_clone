@@ -1,4 +1,4 @@
-# How to run r2d2-prototype
+# How to run chatgpt_clone
 
 ## Step1: Run the Fast API Server
 1. Clone the repo and **cd backend**
